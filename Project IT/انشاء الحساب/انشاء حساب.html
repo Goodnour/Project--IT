@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style1.css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<title>Sign In</title>
+<h1>Sign In </h1>
+</head>
+<body>
+  
+<form>
+<label for="Full_name">Full name : </label>
+<input type="text" id="Full_name" name="Full_name"><br><br>
+<label for="address">Address : </label>
+<input type="text" id="address" name="address"><br><br>
+<label for="Birthday">date of birth : </label>
+<input type="date" id="Birthday" data-="Birthday"><br><br>
+<p>Gender : </p>
+<input type="radio" id="male" name="gender" value="male"
+<label for="male">Male</label>
+
+<input type="radio" id="female" name="gender" value="female" 
+<label for="female">Female</label><br><br>
+
+<label for="tel">Phone number : </label>
+
+<select name="code" id="code">
+<option  value="+20" >+20 Egypt </option>
+<option value="+966">+966 Saudi Arabia</option>
+<option value="+1">+1 United States</option>
+<option value="+965">+965 Kuwait </option>
+<option value="+212">+212 Morocco</option>
+<option value="+44">+44 United kingdom </option>
+<option value="+90">+90 Turkey</option>
+<option value="+962">+962 Jordan</option>
+<option value="+49">+49 Germany</option>
+<option value="+33">+33 France</option>
+
+</select>
+<input type="tel" id="tel" name="phone number"><br><br>
+
+<label for="email">Email : </label>
+<input type="email" id="email" name=" email"><br><br>
+
+<label for="photo">Insert a personal photo : </label>
+<input type="file" accept="image/*" onchange="loadFile(event)">
+      <p><img id="output" width="200px" height="200px"/></p>
+      <script>
+          var loadFile = function(event) {
+              var image = document.getElementById('output');
+              image.src=URL.createObjectURL(event.target.files[0]);
+          };
+      </script>
+
+<label for="nationality">Nationality : </label>
+<input type="text" id="nationality" name="nationality"><br><br>
+<label for="password">Create a password :</label>
+<input type="password" id="PW" name="password"><br><br>
+<label for="confirm password">confirm password : </label>
+<input type="password" id="CPW" name="confirm"><br><br>
+<label for="ID"> ID : </label>
+<input type="text" id="ID" name="ID"><br><br>
+<label for="Passport number">Passport number : </label>
+<input type="text" id="password number" name="PN"><br><br>
+<label for="Issuer">Country of Issue : </label>
+<select id="Issuer">
+<option value="1">Egypt</option>
+<option value="2">United States</option> 
+<option value="3">Kuwait</option> 
+<option value="4">France</option> 
+<option value="5">Saudi Arabia</option> 
+<option value="6">United kingdom</option> 
+<option value="7">Morocco</option> 
+<option value="8">Turkey</option> 
+<option value="9">Jordan</option> 
+<option value="10">Germany</option>
+</select><br><br>
+<label for="Release Date">Release Date : </label>
+<input type="date" id="Release Date" name="Release Date"><br><br>
+<label for="Expiry date">Expiry date :  </label>
+<input type="date" id="Expiry date" name="Expiry date"><br><br>
+
+</form>
+
+
+
+
+
+
+
+
+
+
+<input type="submit"  value="Sign In" ><br><br>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+</html>
